@@ -9,4 +9,21 @@ public class Department {
         this.name = name;
     }
 
+    public int getDepartmentId() {
+        return departmentId;
+    }
+
+    public String getName() {
+        return name;
+    }
+
+    @Override
+    public int hashCode() {
+        return Integer.hashCode(departmentId);
+    }
+
+    @Override
+    public String toString() {
+        return departmentId + " - " + name;
+    }
 }
